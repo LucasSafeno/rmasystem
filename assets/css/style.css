@@ -1,0 +1,120 @@
+*{
+    outline: none;
+}
+html,body{
+    font-size: 16px;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width:100%;
+    height: 80vh;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    background: white;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.side-left{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.login{
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px;
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login form label{
+    font-size: 12px;
+    margin: 25px 0 0 0;
+}
+
+.login form input{
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.brand-logo{
+    background: #333;
+    color: white;
+}
+
+.login form input.btn{
+    background-color: black;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1em;
+}
+.login form input.btn:hover{
+    background: #ccc;
+    color: black;
+}
+
+.side-right{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0158bb;
+    border-radius: 10px;
+}
+
+.side-right .logo img {
+    width: 500px;
+    height: 200px;
+}
+
+.horizontal {
+    width: 2px;
+    height: 70vh;
+    background: #ccc;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.warning{
+    width: 100%;
+    height: 30px;
+    border: 1px solid red;
+    background: #FA766E;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
