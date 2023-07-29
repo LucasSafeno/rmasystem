@@ -52,7 +52,6 @@ main{
 main .produtos, .processos, .gestao{
     width: 300px;
     height: 200px;
-    cursor: pointer;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -73,12 +72,12 @@ main .produtos, .processos, .gestao{
 
 }
 
-.icon span{
+.icon  a{
     margin-top: 10px;
     font-weight: bold;
     color: #0158bb;
 }
 
-.icon span:hover{
+.icon a:hover{
     color: black;
 }
