@@ -58,4 +58,3 @@ $nome = $dados['nome'];
             </ul>
         </nav> <!-- nav !--> 
     </header> <!-- Header !--> 
-    <main>
