@@ -114,3 +114,57 @@ main{
     margin-top: 5px;
     font-weight: bold;
 }
+
+.modal {
+    width: 50%;
+    height: 100vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: calc(25%);
+    display: none;
+    background-color: #333;
+    color: white;
+}
+.modal .modal-titulo{
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    text-align: center;
+    color: black;
+    line-height: 40px;
+}
+
+.modal .fecharModal, .btn-cadastrar {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn:hover{
+    background-color: #0158bb;
+    color: white;
+}
+
+.btn-cadastrar{
+    width: 150px;
+    height: 35px;
+    background-color: #0CF428;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.8s;
+    right: 150px;
+}
+.btn-cadastrar:hover{
+    background-color: #AFF5B4;
+}

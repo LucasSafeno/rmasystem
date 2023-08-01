@@ -2,7 +2,6 @@
  require_once 'pages/header.php';
 ?>
 
-
 <div class="produtos-container">
     
     <div class="produtos-titulo">
@@ -13,8 +12,8 @@
 
         <div class="produtos-adicionar">
             <div class="icon">
-                <img src="assets/images/adicionar.png">
-                <a href="adicionar.php">Adicionar</a>
+                <img src="assets/images/adicionar.png"  >
+                <a href="adicionar.php" id="modal">Adicionar</a>
             </div>
         </div>
 
@@ -36,6 +35,15 @@
     </div><!-- produtos-opcoes !--> 
 
 </div> <!-- produtos-container !-->
+
+
+<div class="modal">
+    <div class="modal-titulo">
+        <h3>Adicionar Produto</h3>
+    </div>
+    <button class="btn-cadastrar">Cadastrar</button>
+    <button class="fecharModal btn">Fechar</button>
+</div>
 
 
 <?php  require_once 'pages/footer.php'; ?>
