@@ -9,6 +9,16 @@
                 })
             
         })
+
+
+        $("#importarModal").click(function(e){
+            e.preventDefault();
+            $(".produtos-importar-modal").toggle("1")
+            $(".fecharModal").click(function(){
+                    $(".produtos-importar-modal").hide("1")
+                })
+        })
+
     })
 </script>
 </body>

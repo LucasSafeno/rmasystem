@@ -27,7 +27,7 @@
         <div class="produtos-importar">
             <div class="icon">
                 <img src="assets/images/excel.png">
-                <a href="consultar.php">Importar Planilha</a>
+                <a href="consultar.php" id="importarModal">Importar Planilha</a>
                 <input type="text" placeholder="CUIDADO AO UTILIZAR, IRÁ SOBREPOR BANCO DE DADOS ANTERIOR" disabled>
             </div>
         </div>
@@ -44,6 +44,23 @@
     <button class="btn-cadastrar">Cadastrar</button>
     <button class="fecharModal btn">Fechar</button>
 </div>
+ <!-- produtos-importar-modal !-->
 
+ <div class="produtos-importar-modal">
+    <div class="produtos-importar-modal-titulo">
+         <h3>Importar Banco dos Excel</h3>
+    </div> 
+    <div class="produtos-importar-modal-body">
+        <form action="import_submit.php" enctype="multipart/form-data" method="post">
+            <label for="csv">Nome:</label>
+            <input type="file" name="csv" id="csv">
+            <br>
+            <input type="submit" class="btn-importar" value="Importar">
+        </form>
+    </div>
+  
+
+    <button class="fecharModal btn">Fechar</button>
+ </div>
 
 <?php  require_once 'pages/footer.php'; ?>
