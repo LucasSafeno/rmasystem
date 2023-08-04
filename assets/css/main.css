@@ -187,3 +187,17 @@ main{
     cursor: pointer;
     margin-left: 10px;
 }
+
+.formulario_cadastrar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario_cadastrar form{
+    display: flex;
+    flex-direction: column;
+}

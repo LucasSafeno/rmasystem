@@ -41,6 +41,31 @@
     <div class="modal-titulo">
         <h3>Adicionar Produto</h3>
     </div>
+
+    <div class="formulario_cadastrar">
+        <form action="produtos_cadastrar.php">
+            <label for="codigo">Código</label>
+            <input type="text" name="codigo" id="codigo">
+
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" id="descricao">
+
+            <label for="valor">Valor</label>
+            <input type="text" name="valor" id="valor">
+
+            <label for="quantidade">Quantidade</label>
+            <input type="number" name="quantidade" id="quantidade" maxlength="2">
+
+            <label for="fornecedor">Fornecedor</label>
+            <input type="text" name="fornecedor" id="fornecedor">
+
+            <label for="cnpj">Fornecedor CNPJ</label>
+            <input type="text" name="cnpj" id="cnpj">
+
+        </form>
+    </div>
+
+
     <button class="btn-cadastrar">Cadastrar</button>
     <button class="fecharModal btn">Fechar</button>
 </div>
