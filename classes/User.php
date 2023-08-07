@@ -3,7 +3,6 @@ namespace RMA;
 
 class User{
     private $db;
-    public $nome;
 
     public function __construct($db){
         $this->db = $db;

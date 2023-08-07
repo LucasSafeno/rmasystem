@@ -1,5 +1,9 @@
 <?php
  require_once 'pages/header.php';
+ use RMA\Produtos;
+
+
+ $p = new Produtos($db);
 ?>
 
 <div class="produtos-container">
@@ -43,7 +47,7 @@
     </div>
 
     <div class="formulario_cadastrar">
-        <form action="produtos_cadastrar.php">
+        <form method="POST" action="produtos_cadastrar.php">
             <label for="codigo">Código</label>
             <input type="text" name="codigo" id="codigo">
 
@@ -62,11 +66,19 @@
             <label for="cnpj">Fornecedor CNPJ</label>
             <input type="text" name="cnpj" id="cnpj">
 
+            <label for="data_compra">Data compra</label>
+            <input type="date" name="data_compra" id="data_compra">
+
+            <label for="nf_compra">NF Compra</label>
+            <input type="text" name="nf_compra" id="nf_compra">
+            <?php 
+                $id = $_GET['id'];
+            ?>
+
+            <input type="submit" class="btn-cadastrar" value="Cadastrar">
+
         </form>
-    </div>
-
-
-    <button class="btn-cadastrar">Cadastrar</button>
+    </div>      
     <button class="fecharModal btn">Fechar</button>
 </div>
  <!-- produtos-importar-modal !-->
