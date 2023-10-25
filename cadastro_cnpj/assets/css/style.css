@@ -11,6 +11,7 @@ a{
 ul{
     list-style: none ;
 }
+
 .main-title{
     position: relative;
     display: inline;
@@ -24,7 +25,9 @@ ul{
     bottom: 0;
     left: 50%;
 }
-
+.underRed{
+    color: red;
+}
 /*HEADER*/  
     /* NAV */
 header{
@@ -36,8 +39,11 @@ header{
     align-items: center;
 }
 header .logo a{
-    color: white;
-    text-transform: uppercase;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
 }
 nav .container ul{
     width: 100%;
@@ -52,7 +58,7 @@ nav .container ul li a{
 }
 
 nav .container ul li a:hover{
-    border-color: white;
+    border-color: #EE1D24;
 }
 
 nav .container ul li a.login-btn{
@@ -60,15 +66,15 @@ nav .container ul li a.login-btn{
     height: 30px;
     padding: 5px 30px;
     background: transparent;
-    color: green;
-    border: 1px solid green;
+    color: #EE1D24;
+    border: 1px solid #EE1D24;
     border-radius: 8px;
     transition: .5s;
 }
 
 nav .container ul li a.login-btn:hover{
     background: white;
-    color: black;
+    color: #EE1D24;
     border: 1px solid black;
 }
 
@@ -84,4 +90,47 @@ nav .container ul li a.login-btn:hover{
     width: 100%;
     height: 80vh;
     background: #F9F9F9;
+    display: flex;
+    justify-content: center;
+}
+
+.box-links .box-link{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #EE1D24;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-links .box-link a{
+    color: #EE1D24
+}
+.box-links .box-link a:hover{
+    font-weight: bold;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 16px;
+}
+footer a {
+    color: #EE1D24;
+    font-size: 16px;
+    margin: 10px;
+}
+footer a:hover{
+    color: red;
 }
