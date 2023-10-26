@@ -1,0 +1,16 @@
+{
+    "name": "user/rmasystem_v1",
+    "description": "Sistema de gerenciamento RMA",
+    "autoload": {
+        "psr-4": {
+            "RMA\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Safeno",
+            "email": "lugnorio@gmail.com"
+        }
+    ],
+    "require": {}
+}

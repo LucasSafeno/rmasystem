@@ -63,6 +63,7 @@ header .logo a{
 nav .container ul{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 nav .container ul li a{
     color: white;
@@ -107,12 +108,14 @@ nav .container ul li a.login-btn:hover{
     background: #CCC;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 .box-links .box-link{
     width: 200px;
     height: 200px;
+    background-color: #F0AA90;
     border: 1px solid #EE1D24;
     margin: 20px;
     padding: 30px;
@@ -146,33 +149,44 @@ nav .container ul li a.login-btn:hover{
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
 
 }
 
 #formulario-area label{
     margin-top: 10px;
-    margin-bottom: 5px;
     font-weight: bold;
     color: #EE1D24;
 }
 
-#formulario-area  input{
+#formulario-area input{
     width: 250px;
-    margin: 10px 0;
-    padding: 5px 25px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px 30px;
     color: #999;
     position: relative;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#formulario-area input:focus{
+    border: 1px solid #EE1D24;
+}
+
+#formulario-area a{
+    margin-top: 5px;
 }
 #formulario-area a:hover{
     color: #333;
     font-weight: bold;
+
 }
 
 #formulario-area i{
     position: relative;
     right: 110px;
-    bottom: 32px;
+    bottom: 24px;
 }
 
 #formulario-area .main-btn{
@@ -186,8 +200,9 @@ nav .container ul li a.login-btn:hover{
 }
 
 #formulario-area .main-btn:hover{
-    border-color: #EE1D24;
+    border-color: black;
     color: #EE1D24;
+    background: white;
 }
 /*FOOTER*/
 footer {

@@ -15,7 +15,7 @@
 
                   
                         <label for="senha">Senha : </label>
-                        <input type="password" name="senha" id="senha" placeholder="**********">
+                        <input type="password" name="senha" id="senha" placeholder="Password">
                         <i class="fa-solid fa-lock"></i>
 
                    
