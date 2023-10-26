@@ -46,6 +46,20 @@ class Usuario {
 
     } // login
 
+    public function getInfoUser(){
+        $dados = array();
+
+        $sql = $this->db->prepare('SELECT * FROM usuarios WHERE id = :id');
+        $sql->bindValue(':id', $this->__get('id'));
+        $sql->execute();
+
+        if($sql->rowCount() > 0 ){
+            $dados = $sql->fetch();
+        }
+
+        return $dados;
+    }
+
 
 } // Usuario
 

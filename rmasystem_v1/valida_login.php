@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include_once "vendor/autoload.php";
 
 
@@ -18,7 +19,9 @@ if(isset($_POST['usuario']) && !empty($_POST['usuario'])){
         $dados = $u->login();
         $_SESSION['id'] = $dados['id'];
 
-        echo $dados['email'];
+        echo $_SESSION['id'];
+
+//        header("Location: home.php");
     }else{
         echo "<b>Usuário não encontrado</b>";
     }
