@@ -30,15 +30,15 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
 
                     <li>
-                        <a href="#">Support</a>
+                        <a href="mailto:suporte@atual.tech">Support</a>
                     </li>
 
                     <li>
-                        <a href="#" class="login-btn">LOGIN</a>
+                        <a href="login.php" class="login-btn">LOGIN</a>
                     </li>
                 </ul>
             </div>

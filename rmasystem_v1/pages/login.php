@@ -1,0 +1,30 @@
+<main>
+        <div class="container">
+            <div id="main-top">
+                <h2 class="main-title">Faça seu Login</h2>
+            </div>
+
+            <div id="login-area">
+                <form action="" id="formulario-area">
+
+                   
+                        <label for="usuario">Usuário : </label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Sua matricula" >
+                        <i class="fa-solid fa-user"></i>
+                   
+
+                  
+                        <label for="senha">Senha : </label>
+                        <input type="password" name="senha" id="senha" placeholder="**********">
+                        <i class="fa-solid fa-lock"></i>
+
+                   
+                        <input type="submit" value="LOGIN" class="main-btn" >
+                        <a href="#">Esqueceu a senha ?</a>
+                        
+                   
+                </form>
+            </div>
+
+        </div>
+    </main>

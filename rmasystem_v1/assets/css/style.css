@@ -1,6 +1,8 @@
 /* GERAL */
 *{
     box-sizing: border-box;
+    outline: none;
+    border: none;
 }
 body{
 font-family: 'Titillium Web', sans-serif;
@@ -102,10 +104,10 @@ nav .container ul li a.login-btn:hover{
 .box-links{
     width: 100%;
     height: 80vh;
-    background: #F9F9F9;
+    background: #CCC;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;    
 }
 
 .box-links .box-link{
@@ -126,6 +128,67 @@ nav .container ul li a.login-btn:hover{
     font-weight: bold;
 }
 
+/* LOGIN */
+#login-area{
+    width: 100%;
+    height: 80vh;
+    background-color: #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario-area{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+
+}
+
+#formulario-area label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #EE1D24;
+}
+
+#formulario-area  input{
+    width: 250px;
+    margin: 10px 0;
+    padding: 5px 25px;
+    color: #999;
+    position: relative;
+}
+#formulario-area a:hover{
+    color: #333;
+    font-weight: bold;
+}
+
+#formulario-area i{
+    position: relative;
+    right: 110px;
+    bottom: 32px;
+}
+
+#formulario-area .main-btn{
+    background-color: transparent;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#formulario-area .main-btn:hover{
+    border-color: #EE1D24;
+    color: #EE1D24;
+}
 /*FOOTER*/
 footer {
     width: 100%;
