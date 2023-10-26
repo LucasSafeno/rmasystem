@@ -28,6 +28,18 @@ ul{
 .underRed{
     color: red;
 }
+
+.tooltip{
+    width: 120px;
+    height: 20px;
+    background-color: #999;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+}
 /*HEADER*/  
     /* NAV */
 header{
@@ -37,6 +49,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 header .logo a{
     background-color: white;
@@ -92,6 +105,7 @@ nav .container ul li a.login-btn:hover{
     background: #F9F9F9;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box-links .box-link{

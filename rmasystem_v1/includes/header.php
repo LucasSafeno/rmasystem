@@ -15,15 +15,14 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Scripts -->
-    <script src="assets/js/script.js"></script>
+  
 </head>
 <body>
 
     <header>
 
         <div class="logo">
-            <a href="#">technospace<span class="underRed">_</span></a>
+            <a href="https://www.technospace.com.br/" target="_blank">technospace<span class="underRed">_</span></a>
         </div>
 
 
@@ -45,47 +44,3 @@
             </div>
         </nav>
     </header>
-
-    <main>
-        <div class="container">
-            <div id="main-top">
-                <h2 class="main-title">Link's Uteis</h2>
-            </div>
-
-            <div class="box-links">
-                <div class="box-link">
-                    <a href="#">
-                        CORREIOS
-                    </a>
-                </div>
-
-                <div class="box-link">
-                    <a href="#">
-                        BRASPRESS
-                    </a>
-                </div>
-
-                <div class="box-link">
-                    <a href="#">
-                        FSIST
-                    </a>
-                </div>
-
-                <div class="box-link">
-                    <a href="#">
-                        XASDASDAS
-                    </a>
-                </div>
-            </div>
-
-
-        </div>
-    </main>
-
-    <footer>
-        <p>Desenvolvido por <a href="https://www.github.com/lucassafeno" target="_BLANK">LucasSafeno</a> &copy;  - 2023</p>
-    </footer>
-
-    
-</body>
-</html>
