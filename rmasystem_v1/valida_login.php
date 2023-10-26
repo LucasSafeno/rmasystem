@@ -19,9 +19,7 @@ if(isset($_POST['usuario']) && !empty($_POST['usuario'])){
         $dados = $u->login();
         $_SESSION['id'] = $dados['id'];
 
-        echo $_SESSION['id'];
-
-//        header("Location: home.php");
+        header("Location: home.php");
     }else{
         echo "<b>Usuário não encontrado</b>";
     }

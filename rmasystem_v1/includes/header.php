@@ -42,7 +42,11 @@ include_once "vendor/autoload.php";
                     </li>
 
                     <li>
-                        <a href="login.php" class="login-btn">LOGIN</a>
+                        <?php if(isset($_SESSION['id'])) {?>
+                            <a href="sair.php" class="login-btn">SAIR</a>    
+                        <?php }else{?>
+                            <a href="login.php" class="login-btn">LOGIN</a>
+                        <?php }?>
                     </li>
                 </ul>
             </div>
