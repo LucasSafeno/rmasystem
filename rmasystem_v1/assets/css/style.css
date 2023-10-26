@@ -226,3 +226,24 @@ footer a {
 footer a:hover{
     color: red;
 }
+
+
+
+/*MEDIA QUERIES*/
+@media  screen and  (max-width: 700px){
+    header{
+        height: 100px;
+    }
+
+    .box-links .box-link{
+        width: auto;
+        height: 50px;
+        background-color: #F0AA90;
+        border: 1px solid #EE1D24;
+        margin: 20px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
