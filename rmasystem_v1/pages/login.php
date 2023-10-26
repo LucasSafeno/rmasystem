@@ -5,7 +5,7 @@
             </div>
 
             <div id="login-area">
-                <form action="" id="formulario-area">
+                <form action="valida_login.php" method="POST" id="formulario-area">
 
                    
                         <label for="usuario">Usuário : </label>

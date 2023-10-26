@@ -1,13 +1,4 @@
 <main>
-
-    <?php 
-    
-        use RMA\Database;
-        $db = Database::conexao();
-        
-    
-    ?>
-
         <div class="container">
             <div id="main-top">
                 <h2 class="main-title">Link's Uteis</h2>
