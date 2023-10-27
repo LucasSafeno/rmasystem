@@ -86,3 +86,5 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
 
         </div>
     </main>
+
+    <?php include_once "includes/footer.php"; ?>

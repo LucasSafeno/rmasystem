@@ -13,6 +13,9 @@ a{
 ul{
     list-style: none ;
 }
+main{
+    position: relative;
+}
 
 .main-title{
     position: relative;
@@ -175,6 +178,7 @@ nav .container ul li a.login-btn:hover{
     position: relative;
     border-radius: 8px;
     font-size: 14px;
+    font-weight: bold;
 }
 
 #formulario-area input:focus, #buscar-form input:focus,#fornecedor-form input:focus {
@@ -219,10 +223,12 @@ nav .container ul li a.login-btn:hover{
 /* FORNECEDOR */
 #fornecedor-area{
     height: 100vh;
+    position: relative;
 }
 #fornecedor-area #fornecedor-form .main-btn{
     width: 200px;
     background: green;
+    margin-bottom: 50px;
 }
 
 #fornecedor-area #fornecedor-form .main-btn:hover{
@@ -248,7 +254,7 @@ footer {
     width: 100%;
     height: 30px;
     background-color: #333;
-    position: fixed;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: center;
