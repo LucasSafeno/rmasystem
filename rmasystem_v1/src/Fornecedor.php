@@ -41,7 +41,7 @@ class Fornecedor{
       /**
        * Metodo para buscar CNPJ através da API
        * 
-       * @return $cnpj
+       * @return array
        */
        public function getCnpj(){
         $cnpj = $this->__get('cnpj');
