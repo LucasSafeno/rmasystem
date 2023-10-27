@@ -20,8 +20,8 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
         if(empty($dados)) {
             die('Erro consultar CNPJ');
         }
-        if(isset($dados['error'])){
-            die($dados['error']);
+        if(!isset($dados)){
+            die('Aguarde mais um tempo');
         }   
 
         $cnpj = $dados['cnpj'];
