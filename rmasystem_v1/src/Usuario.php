@@ -11,9 +11,16 @@ class Usuario {
     private $email;
     private $senha;
 
-    public function __construct()
-    {
+    public function __construct(){
+        // Conexão com banco de dados
         $this->db = Database::conexao();
+
+        /**
+         * Verifica se há conexão, caso não existe redireciona para index 
+         */
+        if(!isset($_SESSION['id'])){
+            header("Location: ./index.php");
+        }
     }
 
     /**

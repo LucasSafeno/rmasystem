@@ -19,7 +19,7 @@
 
                 <div class="box-link">
                    
-                    <a href="#"> <i class="fa-solid fa-plus"></i>Cadastrar Fornecedor</a>
+                    <a href="cadastrar_fornecedor.php"> <i class="fa-solid fa-plus"></i>Cadastrar Fornecedor</a>
                 </div>
 
                 <div class="box-link">
