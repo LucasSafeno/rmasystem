@@ -11,6 +11,8 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
     $cnpj =  addslashes($_POST['cnpj']);
 
 
+    $info = array();
+
     $f = new Fornecedor();
     $f->__set('cnpj', $cnpj);
 
@@ -21,8 +23,12 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
         if(!is_numeric(($cnpj))){
             header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
         }
-        if(empty($dados['fantasia'])) {
+        if(empty($dados)) {
             header("Location: cadastrar_fornecedor.php?er=usuarioErr2");
+        }
+
+        if($dados['error']){
+            header("Location: cadastrar_fornecedor.php?er=usuarioErr3"); 
         }
             $cnpj = $dados['cnpj'];
             $nome_fantasia = $dados['fantasia'];
