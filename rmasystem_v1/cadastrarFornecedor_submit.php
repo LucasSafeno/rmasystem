@@ -21,12 +21,9 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
         if(!is_numeric(($cnpj))){
             header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
         }
-        if(strlen($cnpj) < 14){
-            header("Location: cadastrar_fornecedor.php?er=usuarioErr2"); 
-        }
         if(empty($dados['fantasia'])) {
-            header("Location: cadastrar_fornecedor.php?er=usuarioErr3");
-        }else{
+            header("Location: cadastrar_fornecedor.php?er=usuarioErr2");
+        }
             $cnpj = $dados['cnpj'];
             $nome_fantasia = $dados['fantasia'];
             //$ddd = $dados['ddd'];
@@ -38,7 +35,7 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
             $bairro = $dados['bairro'];
             $cidade = $dados['municipio'];
             $estado = $dados['uf'];
-        }
+        
         
     }// getCnpj()
 }else{
