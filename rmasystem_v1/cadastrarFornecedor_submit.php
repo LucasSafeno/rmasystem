@@ -17,11 +17,19 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
     if($f->getCnpj()){
     
         $dados = $f->getCnpj();
+
+        if(!is_numeric(($cnpj))){
+            header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
+        }
+        if(mb_strlen($cnpj) < 14){
+            header("Location: cadastrar_fornecedor.php?er=usuarioErr2"); 
+        }
+
         if(empty($dados)) {
             header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
         }
-        if(!isset($dados)){
-            die('Aguarde mais um tempo');
+        if(empty($dados)){
+            header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
         }
        
       
