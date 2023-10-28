@@ -26,10 +26,7 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
         }
 
         if(empty($dados)) {
-            header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
-        }
-        if(empty($dados)){
-            header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
+            header("Location: cadastrar_fornecedor.php?er=usuarioErr3");
         }
        
       

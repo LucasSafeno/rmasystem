@@ -17,14 +17,18 @@ main{
     position: relative;
 }
 .notificaoErr1{
-    width: auto;
-    height: auto;
-    padding: 10px;
+    min-width: 200px;
+    height: 35px;
     font-weight: bold;
     text-align: center;
     background-color: #E57A63;
     border:1px solid red;
     margin-top: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-title{
