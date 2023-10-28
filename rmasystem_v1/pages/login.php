@@ -20,10 +20,22 @@
 
                    
                         <input type="submit" value="LOGIN" class="main-btn" >
-                        <a href="#">Esqueceu a senha ?</a>
+                        <a href="#">Esqueceu a senha ?</a>    
+                        <?php 
+                    if(isset($_GET['er'])){
                         
-                   
+                        $erro = $_GET['er'];
+
+                        if($erro = 'usuarioErr1'){ ?>
+                                <div class="notificaoErr1">
+                                    <p>Usuário/senha incorreto</p>
+                                </div>
+                        <?php }
+                    }
+                
+                ?>               
                 </form>
+             
             </div>
 
         </div>

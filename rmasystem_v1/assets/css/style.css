@@ -16,6 +16,16 @@ ul{
 main{
     position: relative;
 }
+.notificaoErr1{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #E57A63;
+    border:1px solid red;
+    margin-top: 10px;
+}
 
 .main-title{
     position: relative;

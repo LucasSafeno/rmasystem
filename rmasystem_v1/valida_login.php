@@ -9,7 +9,7 @@ $u = new Usuario();
 if(isset($_POST['usuario']) && !empty($_POST['usuario'])){
     $usuario    =   $_POST['usuario'];
     $senha      =   $_POST['senha'];
-
+    
 
     $u->__set('email', $usuario);
     $u->__set('senha', md5($senha));
@@ -20,8 +20,9 @@ if(isset($_POST['usuario']) && !empty($_POST['usuario'])){
         $_SESSION['id'] = $dados['id'];
 
         header("Location: home.php");
+        $u->verificaSessao();
     }else{
-        echo "<b>Usuário não encontrado</b>";
+        header("Location: login.php?er=usuarioErr1");    
     }
 
 }else{

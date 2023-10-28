@@ -18,12 +18,13 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
     
         $dados = $f->getCnpj();
         if(empty($dados)) {
-            die('Erro consultar CNPJ');
+            header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
         }
         if(!isset($dados)){
             die('Aguarde mais um tempo');
-        }   
-
+        }
+       
+      
         $cnpj = $dados['cnpj'];
         $nome_fantasia = $dados['fantasia'];
         //$ddd = $dados['ddd'];
@@ -35,7 +36,13 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
         $bairro = $dados['bairro'];
         $cidade = $dados['municipio'];
         $estado = $dados['uf'];
-    }
+
+        if(!isset($nome_fantasia)){
+            header("Location: cadastrar_fornecedor.php?er=cadastroErr1");
+        }
+    }// getCnpj()
+}else{
+    header("Location: cadastrar_fornecedor.php?er=cadastroErr1");
 }
 
 ?>

@@ -14,13 +14,6 @@ class Usuario {
     public function __construct(){
         // Conexão com banco de dados
         $this->db = Database::conexao();
-
-        /**
-         * Verifica se há conexão, caso não existe redireciona para index 
-         */
-        if(!isset($_SESSION['id'])){
-            header("Location: ./index.php");
-        }
     }
 
     /**
@@ -30,6 +23,16 @@ class Usuario {
     public function __set($attr, $valor){
         return $this->$attr = $valor;
     }// __set
+
+    public function verificaSessao(){
+        
+        /**
+         * Verifica se há conexão, caso não existe redireciona para index 
+         */
+        if(!isset($_SESSION['id'])){
+            header("Location: ./index.php");
+        }
+    }
 
     /**
      * metodo __get para recupera os valores

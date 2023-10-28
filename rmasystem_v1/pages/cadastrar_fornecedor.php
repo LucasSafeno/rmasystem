@@ -10,8 +10,26 @@
                     <input type="text" name="cnpj" id="cnpj">
                     <input type="submit" value="Buscar" class="main-btn">
 
+                    <?php 
+                    
+                    if(isset($_GET['er'])){
+                        $erro = $_GET['er'];
+
+                        if($erro = 'cadastroErr1'){ ?>
+
+                                <div class="notificaoErr1">
+                                    <p>CNPJ Inválido!</p>
+                                </div>
+
+
+                        <?php }
+                    }
+                    ?>
+
                 </form>
-            </div>
+
+                
+
 
         </div>
     </main>
