@@ -5,7 +5,7 @@ use RMA\Fornecedor;
 use RMA\Usuario;
 
 $u = new Usuario();
-
+$u->verificaSessao();
 
 if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
     $cnpj =  addslashes($_POST['cnpj']);
@@ -21,30 +21,25 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
         if(!is_numeric(($cnpj))){
             header("Location: cadastrar_fornecedor.php?er=usuarioErr1");
         }
-        if(mb_strlen($cnpj) < 14){
+        if(strlen($cnpj) < 14){
             header("Location: cadastrar_fornecedor.php?er=usuarioErr2"); 
         }
-
-        if(empty($dados)) {
+        if(empty($dados['fantasia'])) {
             header("Location: cadastrar_fornecedor.php?er=usuarioErr3");
+        }else{
+            $cnpj = $dados['cnpj'];
+            $nome_fantasia = $dados['fantasia'];
+            //$ddd = $dados['ddd'];
+            $telefone = $dados['telefone'];
+            $email = $dados['email'];
+            $rua = $dados['logradouro'];
+            $numero = $dados['numero'];
+            $complemento = $dados['complemento'];
+            $bairro = $dados['bairro'];
+            $cidade = $dados['municipio'];
+            $estado = $dados['uf'];
         }
-       
-      
-        $cnpj = $dados['cnpj'];
-        $nome_fantasia = $dados['fantasia'];
-        //$ddd = $dados['ddd'];
-        $telefone = $dados['telefone'];
-        $email = $dados['email'];
-        $rua = $dados['logradouro'];
-        $numero = $dados['numero'];
-        $complemento = $dados['complemento'];
-        $bairro = $dados['bairro'];
-        $cidade = $dados['municipio'];
-        $estado = $dados['uf'];
-
-        if(!isset($nome_fantasia)){
-            header("Location: cadastrar_fornecedor.php?er=cadastroErr1");
-        }
+        
     }// getCnpj()
 }else{
     header("Location: cadastrar_fornecedor.php?er=cadastroErr1");
