@@ -1,8 +1,10 @@
 <?php 
 namespace RMA;
+
 use RMA\Database;
 
 class Fornecedor{
+  public $db; // conexão com banco de dados
 
     private $id;
     private $nome_fantasia;
@@ -16,10 +18,11 @@ class Fornecedor{
     private $estado;
     private $email;
 
-    private $db; // conexão com banco de dados
+  
 
     public function __construct(){
-        $this->db = Database::conexao(); // realizar conexão
+      $this->db = Database::conexao();// realizar conexão
+
     }
 
     /**
@@ -69,6 +72,31 @@ class Fornecedor{
 
        } // getCnpj
 
+       /**
+        * metodo cadastrar forncedor no banco de dados
+        * @return void
+        */
+       public function cadastrarFornecedor(){
+        $dados = array();
+        
+        
+        $sql = "INSERT INTO fornecedores  SET  cnpj = :cnpj, nome_fantasia = :nome_fantasia, telefone = :telefone, email = :email, rua = :rua, numero = :numero, complemento = :complemento, bairro = :bairro, cidade = :cidade, estado = :estado";
+        $sql= $this->db->prepare($sql);
+        $sql->bindValue(":cnpj", $this->__get('cnpj'));
+        $sql->bindValue(":nome_fantasia", $this->__get('nome_fantasia'));
+        $sql->bindValue(":telefone", $this->__get('telefone'));
+        $sql->bindValue(":email", $this->__get('email'));
+        $sql->bindValue(":rua", $this->__get('rua'));
+        $sql->bindValue(":numero", $this->__get('numero'));
+        $sql->bindValue(":complemento", $this->__get('complemento'));
+        $sql->bindValue(":bairro", $this->__get('bairro'));
+        $sql->bindValue(":cidade", $this->__get('cidade'));
+        $sql->bindValue(":estado", $this->__get('estado'));
+        $sql->execute();
+
+        return true;
+
+       } // cadastrarFornecedor
 
 
 }// fornecedor

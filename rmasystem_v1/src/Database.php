@@ -26,7 +26,7 @@ class Database{
       * @return PDO
       */
       public static function conexao(){
-        if(static::$db == null){
+       
             try{
 
                 static::$db = new \PDO("mysql:host=localhost;dbname=vc_db", "root",);
@@ -38,7 +38,7 @@ class Database{
             }
 
             return static::$db;
-        }
+        
       }
 
 

@@ -53,10 +53,10 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
             </div>
 
             <div id="fornecedor-area">
-                <form action="valida_login.php" method="POST" id="fornecedor-form">
+                <form action="fornecedor_submit.php" method="POST" id="fornecedor-form">
 
                    <label for="cnpj">CNPJ</label>
-                   <input type="text" name="cnpj" id="cnpj" disabled value="<?=$cnpj; ?>">
+                   <input type="text" name="cnpj" id="cnpj" value="<?=$cnpj;?>">
                     
                     <label for="nome_fantasia">Nome Fantasia</label>
                     <input type="text" name="nome_fantasia" id="nome_fantasia" value="<?=$nome_fantasia; ?>">
@@ -65,7 +65,7 @@ if(isset($_POST['cnpj']) && !empty($_POST['cnpj'])){
                     <input type="text" name="telefone" id="telefone" value="<?=$telefone;?>">
 
                     <label for="email">Email</label>
-                    <input type="email" name="emaill" id="email" value="<?=$email;?>" >
+                    <input type="email" name="email" id="email" value="<?=$email;?>" >
 
                     <label for="rua">Rua </label>
                     <input type="text" name="rua" id="rua" value="<?=$rua;?>" >

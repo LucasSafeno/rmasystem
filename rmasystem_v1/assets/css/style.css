@@ -31,6 +31,15 @@ main{
     justify-content: center;
 }
 
+.cadastrook{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #79F2B0;
+    border:1px solid green;
+    color: black;
+}
+
 .main-title{
     position: relative;
     display: inline;

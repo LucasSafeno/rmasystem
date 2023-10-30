@@ -15,13 +15,17 @@
                     if(isset($_GET['er'])){
                         $erro = $_GET['er'];
 
-                        if($erro = 'cadastroErr1'){ ?>
+                        if($erro == 'cadastroErr1'){ ?>
 
                                 <div class="notificaoErr1">
                                     <p>CNPJ Inválido!</p>
                                 </div>
 
 
+                        <?php }else if($erro == 'errocadastro'){ ?>
+                            <div class="notificaoErr1">
+                                    <p>Erro ao cadastrar. Aguarde 1minuto e tente novamente!</p>
+                                </div>
                         <?php }
                     }
                     ?>
